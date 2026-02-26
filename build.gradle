@@ -21,6 +21,15 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
 
+    // 스프링 시큐리티 라이브러리
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-mail'
+
+    // jwt 라이브러리
+    implementation 'io.jsonwebtoken:jjwt-api:0.12.6'
+    implementation 'io.jsonwebtoken:jjwt-impl:0.12.6'
+    implementation 'io.jsonwebtoken:jjwt-orgjson:0.12.6'
+
     // 마리아 DB 추가
     implementation 'org.mariadb.jdbc:mariadb-java-client:3.4.1'
 
