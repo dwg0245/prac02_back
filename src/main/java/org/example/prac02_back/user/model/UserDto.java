@@ -29,7 +29,8 @@ public class UserDto {
 
 
         public static UserDto.SignupRes from(User entity){
-            return UserDto.SignupRes.builder()
+            return SignupRes.builder()
+                    .idx(entity.getIdx())
                     .email(entity.getEmail())
                     .name(entity.getName())
                     .password(entity.getPassword())
