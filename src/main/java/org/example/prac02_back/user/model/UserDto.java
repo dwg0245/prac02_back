@@ -36,6 +36,8 @@ public class UserDto {
                     .email(entity.getEmail())
                     .name(entity.getName())
                     .password(entity.getPassword())
+                    .enable(true)
+                    .role("ROLE_USER")
                     .build();
         }
     }
