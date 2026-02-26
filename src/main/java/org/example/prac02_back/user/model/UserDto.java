@@ -24,15 +24,13 @@ public class UserDto {
     @Getter
     @Builder
     public static class SignupRes{
-        private Long idx;
         private String email;
         private String name;
         private String password;
 
 
-        public static UserDto.SignupRes from(User entity){
-            return SignupRes.builder()
-                    .idx(entity.getIdx())
+        public static User from(User entity){
+            return User.builder()
                     .email(entity.getEmail())
                     .name(entity.getName())
                     .password(entity.getPassword())
